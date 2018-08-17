@@ -611,6 +611,8 @@ fastuidraw::gl::ImageAtlasGL::TextureImage::
     {
       glDeleteTextures(1, &d->m_texture);
     }
+
+  FASTUIDRAWdelete(d);
 }
 
 GLuint
